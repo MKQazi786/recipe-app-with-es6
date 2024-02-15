@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recipe app with es6</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
         <h1>Recipe App</h1>
         <div>
-            <input id="searchInput" type="text" placeholder="Search here for recipe..."> 
-            <button  id="searchBtn" >Search</button>
+            <input id="searchInput" type="text" placeholder="Search here for recipe...">
+            <button id="searchBtn">Search</button>
         </div>
     </header>
-    
+
+    <main>
+        <section id="searchResult">
+            <h2>Search Results</h2>
+            <div>
+                <ul id="recipeList"></ul>
+            </div>
+            
+        </section>
+        <section id="recipeDetails">
+            <h2>Recipe Details</h2>
+            <div id="recipeDetailsContainer"></div>
+        </section> 
+    </main>
+       
+    <script type="module" src="index.js"></script>
 </body>
 </html>
