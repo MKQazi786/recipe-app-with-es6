@@ -4,6 +4,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    min-width: 65rem;
+    background-color: #BaBaBa;
 }
 
 header {
@@ -12,9 +14,11 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(216, 161, 170);
+    box-shadow: -1px 2px 25px black;
     padding: 0.3rem;
     width: 99.2%;
     color: black;
+
 }
 
 header div{
@@ -39,13 +43,38 @@ header div input{
     margin: 0.3rem;
 }
 
+#searchResult {
+    min-width: 9rem;
+    overflow-y:scroll;
+    scrollbar-width: none;
+    height: 30rem;
+}
+
 main{
     display: flex;
-    align-items: flex-end;
-    gap: 1rem;
     margin: 0.5rem;
 }
 
 main #recipeDetails{
-    padding-left: 10rem;
+    padding-left: 3rem;
+}
+
+#recipeList {
+    padding: 0.2rem 0rem 0.5rem 0.5rem;
+}
+
+#recipeList li{
+    border: 1.5px solid black;
+    border-radius: 0.5rem;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    margin: 0.7rem 0.5rem;
+    background-color: pink;
+    box-shadow: 1px 6px 23px black;
+    width: 20rem;
+    font-weight: bolder;
+}
+
+#recipeDetails {
+    min-width: 10rem;
 }

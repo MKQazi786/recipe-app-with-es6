@@ -5,10 +5,17 @@
     const inputBtn = document.querySelector("#searchBtn");
     
     const searchUlRecipes = document.querySelector("#recipeList");
-    
+
+
     window.searchRecipes = (filteredRecipes) => {
+        searchUlRecipes.innerHTML="";    
         filteredRecipes.map((response) => {
-            console.log(response)
+            let li = document.createElement("li");
+            const liDiv = `
+             <div>${response.title}</div>
+            `;
+            li.innerHTML = liDiv
+            searchUlRecipes.appendChild(li); 
         });
     }
     
@@ -18,7 +25,7 @@
             return response.title.toLowerCase().includes(userInput.toLowerCase()) ||
             response.ingredients.join('').toLowerCase().includes(userInput.toLowerCase());
         })
-        searchRecipes(filteredRecipes);
+        searchRecipes(filteredRecipes); 
     }
     inputBtn.addEventListener("click", search);         
 })();
