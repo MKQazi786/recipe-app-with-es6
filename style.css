@@ -26,8 +26,15 @@ header {
     
 }
 
+header img {
+    width: 6rem;
+    border-radius: 1rem;
+}
+
 header h1 {
     text-align: center;
+    align-self: center;
+    
 }
 
 header div {
