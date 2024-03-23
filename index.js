@@ -13,7 +13,7 @@
         div.className = "recipeDetailsDiv"
         let recipeDetails =
         `
-        <h2>${response.title}</h2>
+        <h1>${response.title}</h1>
 
         <h3>Ingredients</h3>
 
