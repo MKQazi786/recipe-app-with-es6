@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-width: 65rem;
+    min-width: 73rem;
     background-color: #BaBaBa;
 }
 
@@ -18,15 +18,19 @@ header {
     padding: 0.3rem;
     width: 99.2%;
     color: black;
-
+    
 }
 
-header div{
+header h1 {
+    text-align: center;
+}
+
+header div {
     padding-right: 0.4rem;
     align-self: center;
 }
 
-header div button{
+header div button {
     background-color: black;
     border: 1px solid black;
     color: whitesmoke;
@@ -35,27 +39,28 @@ header div button{
     box-shadow: 0px 0px 4px black;
 }
 
-header div input{
+header div input {
     padding: 0.7rem 0.8rem;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
     box-shadow: 0px 0px 10px black;
     border: 1px solid white;
     margin: 0.3rem;
 }
 
 #searchResult {
-    min-width: 9rem;
-    overflow-y:scroll;
+    /* min-width: 9rem; */
+    overflow-y: scroll;
     scrollbar-width: none;
-    height: 30rem;
+    height: 35rem;
+    width: 24rem;
 }
 
-main{
+main {
     display: flex;
     margin: 0.5rem;
 }
 
-main #recipeDetails{
+main #recipeDetails {
     padding-left: 3rem;
 }
 
@@ -63,18 +68,57 @@ main #recipeDetails{
     padding: 0.2rem 0rem 0.5rem 0.5rem;
 }
 
-#recipeList li{
+#recipeList li {
     border: 1.5px solid black;
     border-radius: 0.5rem;
     list-style: none;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem 1rem;
     margin: 0.7rem 0.5rem;
     background-color: pink;
     box-shadow: 1px 6px 23px black;
     width: 20rem;
-    font-weight: bolder;
+}
+
+.recipeDetailsDiv {
+    border: 1.5px solid black;
+    border-radius: 0.5rem;
+    list-style: none;
+    padding: 0rem 1rem 1rem;
+    margin: 0.7rem 0.5rem;
+    background-color: pink;
+    box-shadow: 1px 6px 23px black;
+    width: 42rem;
+}
+
+#recipeList li h3 {
+    margin: 0.5rem 0rem;
 }
 
 #recipeDetails {
     min-width: 10rem;
+}
+
+footer {
+    background-color: rgb(216, 161, 170);
+    padding: 0.5rem;
+    font-style: oblique;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: -1px 2px 25px black;
+    text-shadow: -2px 0px 8px white;
+    font-weight:bolder ;
+    width: 98.5%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.7rem;
+    margin: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.icon a {
+    color: black;
 }
